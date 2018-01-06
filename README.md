@@ -1,2 +1,2 @@
 # jekyll-blog
-Course tutorial example.
+The purpose of this project is to learn Jekyll's architectural structure.

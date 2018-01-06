@@ -1,0 +1,28 @@
+<header>
+  <div class="row">
+    <div class="medium-6 columns">
+      <a class="site-title" href="{{ '/' | relative_url }}"><img src="/assets/img/logo.png" alt="Logo" class="nav-logo"></a>
+    </div>
+    <div class="medium-6 columns">
+      {% assign header_items = site.data.articles.header %}
+
+      {% if header_items %}
+        <nav class="site-nav">
+          <a href="#" class="menu-icon">
+            <img src="/assets/img/menu.png" alt="Menu">
+          </a>
+          <div class="trigger">
+            {% for item in header_items %}
+              {% assign article_url = item | prepend:"/" | append:"/" %}
+              {% assign article = site.articles | where:"url", article_url | first %}
+
+              {% if article.title %}
+                <a class="page-link" href="{{ article.url | relative_url }}">{{ article.title | escape }}</a>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </nav>
+      {% endif %}
+    </div>
+  </div>
+</header>

@@ -1,0 +1,27 @@
+{
+  "name": "jekyll-blog",
+  "version": "1.0.0",
+  "description": "Course tutorial example.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iBahena/jekyll-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iBahena/jekyll-blog/issues"
+  },
+  "homepage": "https://github.com/iBahena/jekyll-blog#readme",
+  "devDependencies": {
+    "browser-sync": "^2.21.0",
+    "gulp": "^3.9.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-shell": "^0.6.3",
+    "gulp-uncss": "^1.0.6",
+    "lodash": "^4.17.4"
+  }
+}
